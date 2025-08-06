@@ -117,11 +117,12 @@
             // 
             lblResultado.AutoSize = true;
             lblResultado.Font = new Font("Segoe UI", 27.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblResultado.Location = new Point(304, 24);
+            lblResultado.Location = new Point(295, 21);
             lblResultado.Name = "lblResultado";
             lblResultado.Size = new Size(43, 50);
             lblResultado.TabIndex = 8;
             lblResultado.Text = "0";
+            lblResultado.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // Calculadora
             // 
