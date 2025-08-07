@@ -22,7 +22,8 @@ namespace Calculadora
             }
 
             // Validação de números
-            if (!double.TryParse(txtNumero1.Text, out _) || !double.TryParse(txtNumero2.Text, out _))
+            //if (!double.TryParse(txtNumero1.Text, out _) || !double.TryParse(txtNumero2.Text, out _))
+            if (!double.TryParse(txtNumero1.Text, out double numero1) || !double.TryParse(txtNumero2.Text, out double numero2))
             {
                 MessageBox.Show(
                     "Digite apenas números válidos (sem letras ou caracteres especiais).",
@@ -32,8 +33,8 @@ namespace Calculadora
                 );
                 return;
             }
-            double numero1 = Convert.ToDouble(txtNumero1.Text);
-            double numero2 = Convert.ToDouble(txtNumero2.Text);
+            //double numero1 = Convert.ToDouble(txtNumero1.Text);
+            //double numero2 = Convert.ToDouble(txtNumero2.Text);
            
             lblResultado.Text = (numero1 + numero2).ToString();
         }
